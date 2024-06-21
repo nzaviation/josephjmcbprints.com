@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Joseph McB Prints</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="/">Joseph McB Prints</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/prints">Prints</a></li>
+          <li><a href="/about">About Me</a></li>
+          <li><a href="/contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Welcome to Joseph McB's official website!</h1>
+          <p>Here you will be able to read about Joseph's aviation story and browse his ever-growing list of print options!</p>
+        </div>
+        <a href="/prints">My prints</a>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonial-card">
+        <i class="fas fa-quote-left fa-2x" style="color: #007bff;"></i>
+        <p class="testimonial-quote">Joseph McB Prints delivers top-notch quality and lightning-fast shipping! Keep up the fantastic work, Joseph!</p>
+        <p class="testimonial-author">Jayden Savieti</p>
+      </div><br><br>
+
+      <div class="testimonial-card">
+        <i class="fas fa-quote-left fa-2x" style="color: #007bff;"></i>
+        <p class="testimonial-quote">The prints from Joseph McB Prints are very high quality and look amazing. The print also arrived very quickly, thank you Joseph!</p>
+        <p class="testimonial-author">Sam Palmer</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>&copy; 2023 - <span id="currentYear"></span> Jack Palmer. All rights reserved.</span>
+      </div>
+    </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+            var yearElement = document.getElementById('currentYear');
+            var currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        });
+</script>
+  </body>
+</html>

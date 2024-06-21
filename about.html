@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Joseph McB Prints</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="http://www.josephmcbprints.com">Joseph McB Prints</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="http://www.josephmcbprints.com">Home</a></li>
+          <li><a href="/prints">Prints</a></li>
+          <li><a href="/about">About Me</a></li>
+          <li><a href="/contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Discover my story and how I came to love the world of aviation!</p>
+        <div class="row company-info">
+          <h3>My Story</h3>
+          <p>At 11 years old, I, Joseph, developed a passion for aviation. In the first half of 2023, I captured aircraft photos on my phone, including Air NZ Boeing 787 and 777 that had diverted to Christchurch due to Auckland Airport flooding. On the same day, I spotted a 30-year special National 747 livery, a China Airlines Cargo 777 or A350, and 2 USAF KC-135 tankers.</p><br>
+              <p>I upgraded to a 14-year-old Nikon D3100 DSLR in June, enhancing my photography skills by editing and shooting in non-backlit places. Throughout 2023, I spotted rare planes like an ANA 787-9 Dreamliner transporting the Japanese football team for the Fifa World Cup, a USCG HC-130J, a National 747, and a Qantas A330.</p><br>
+              <p>During a free flight to Blenheim, I was with Tom Heslop in the cockpit. Later, I spotted a USAF LC-130 and rare aircraft like a NASA C-130. After a Disney Cruise in Auckland, I saw Air NZ 787 and 777, Air Canada 777, Air Chathams Swearing Metroliner, and Saab 340B.</p><br>
+              <p>In December, I used a friend's Canon EOS 200D Mark II. In 2024, I spotted a USAF McDonnell Douglas KC-10A Extender, met the co-pilot, and received a cool patch. Recently, I spotted a Qantas freight A330-202 in Christchurch for the first time.</p><br>
+              <p>I sell prints to share my work nationwide, emphasizing passion over profit. In 2023, I gained endorsements from airlines and Christchurch Airport. Featured in the Air NZ magazine, reposted on Christchurch Airport's Instagram page three times, followed by GCH Aviation, and featured on various airline Instagram stories.</p><br>
+              <p>With my Nikon D3100, I achieved four photos on Jetphotos, a significant accomplishment given the camera's limitations.</p><br>
+        </div>
+  
+        <div class="row team">
+          <h3>My Gear</h3>
+          <ul>
+              <h5>Current Gear:</h5>
+              <p>- Canon EOS 200D Mark II</p>
+              <p>- Canon EF 70-300mm</p>
+              <p>- Canon EF 18-55mm</p>
+          </ul>
+        </div>
+      
+        <div class="row team">
+          <h3>My Team</h3>
+          <ul>
+            <li>Joseph McBrearty - Founder</li>
+            <li>Jack Palmer - Developer</li>
+          </ul>
+        </div>
+      </section>
+    <br><br>
+    <footer>
+      <div>
+        <span>&copy; 2023 - <span id="currentYear"></span> Jack Palmer. All rights reserved.</span>
+      </div>
+    </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+            var yearElement = document.getElementById('currentYear');
+            var currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        });
+</script>
+  </body>
+</html>
